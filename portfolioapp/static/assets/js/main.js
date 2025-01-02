@@ -2,8 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mostrar/Ocultar botón "Scroll to Top"
   window.addEventListener("scroll", function () {
     const scrollTopBtn = document.getElementById("scrollTopBtn");
-    gsap.set(scrollTopBtn, { display: window.scrollY > 300 ? "flex" : "none" });
-    gsap.to(scrollTopBtn, { duration: 0.3, opacity: window.scrollY > 300 ? 1 : 0 });
+    if (scrollTopBtn) {
+      gsap.set(scrollTopBtn, { display: window.scrollY > 300 ? "flex" : "none" });
+      gsap.to(scrollTopBtn, { duration: 0.3, opacity: window.scrollY > 300 ? 1 : 0 });
+    }
   });
 
   // Función para desplazarse al inicio
@@ -17,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (element) {
       gsap.to(window, {
         duration: 1,
-        scrollTo: { y: element, offsetY: 50 },
+        scrollTo: { y: element, offsetY: 50 }, // offsetY ajusta para headers fijos
         ease: "power2.inOut",
       });
     } else {
@@ -25,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Exponer las funciones al ámbito global (si es necesario)
+  // Exponer las funciones al ámbito global
   window.scrollToTop = scrollToTop;
   window.$scroll = $scroll;
 });
