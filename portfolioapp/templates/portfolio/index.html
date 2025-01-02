@@ -587,7 +587,8 @@
       
         // Mostrar/ocultar el botón al hacer scroll
         ScrollTrigger.create({
-          start: "top 400px", // Mostrar el botón después de 200px de scroll
+          trigger: "body", // Usa el cuerpo del documento como referencia
+          start: "top+=200", // Muestra el botón después de 400px desde el inicio
           onEnter: () => scrollTopBtn.classList.remove("hidden"),
           onLeaveBack: () => scrollTopBtn.classList.add("hidden"),
         });
