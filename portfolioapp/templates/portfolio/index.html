@@ -40,7 +40,7 @@
         <li class="group pl-6">
           
           <span
-            @click="$scroll('#about')"
+            onclick="$scroll('#about')"
             class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
             >About</span
           >
@@ -54,7 +54,7 @@
         <li class="group pl-6">
           
           <span
-            @click="$scroll('#portfolio')"
+            onclick="$scroll('#portfolio')"
             class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
             >Portfolio</span
           >
@@ -68,7 +68,7 @@
         <li class="group pl-6">
           
           <span
-            @click="$scroll('#work')"
+            onclick="$scroll('#work')"
             class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
             >Work</span
           >
@@ -81,7 +81,7 @@
       </ul>
     </div>
     <div class="block lg:hidden">
-      <button @click="mobileMenu = true">
+      <button onclick="mobileMenu = true">
         <i class="bx bx-menu text-4xl text-white"></i>
       </button>
     </div>
@@ -115,7 +115,7 @@
   >
     <button
       class="absolute top-0 right-0 mt-4 mr-4"
-      @click="mobileMenu = false"
+      onclick="mobileMenu = false"
     >
       <img src="{% static '/assets/img/icon-close.svg' %}" class="h-10 w-auto" alt="" />
     </button>
@@ -125,7 +125,7 @@
       <li class="py-2">
         
         <span
-          @click="$scroll('#about')"
+          onclick="$scroll('#about')"
           class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
           >About</span
         >
@@ -136,7 +136,7 @@
       <li class="py-2">
         
         <span
-          @click="$scroll('#portfolio')"
+          onclick="$scroll('#portfolio')"
           class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
           >Portfolio</span
         >
@@ -147,7 +147,7 @@
       <li class="py-2">
         
         <span
-          @click="$scroll('#work')"
+          onclick="$scroll('#work')"
           class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
           >Work</span
         >
