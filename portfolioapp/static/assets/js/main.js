@@ -15,7 +15,7 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
-
+ 
 function $scroll(id) {
   const element = document.querySelector(id);
   if (element) {
