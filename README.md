@@ -1,6 +1,7 @@
 # ✅ Portfolio
 
 Este portfolio es una muestra de mis habilidades como desarrollador Full Stack especializado en Django. Incluye proyectos destacados que he desarrollado, enfocados en la creación de aplicaciones web escalables, eficientes y centradas en el usuario. También presenta mi experiencia profesional, habilidades técnicas y formas de contacto para colaborar en futuros proyectos. ¡Explora y descubre cómo puedo ayudarte a hacer realidad tus ideas!
+
 ---
 
 ## 🚀 Características
